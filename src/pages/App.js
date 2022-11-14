@@ -1,10 +1,12 @@
 import '../pages/App.css';
+// import GetClima from './Search/components/GetClima';
 import Search from './Search/Search';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Search />
+      {/* <GetClima /> */}
     </div>
   );
 }
