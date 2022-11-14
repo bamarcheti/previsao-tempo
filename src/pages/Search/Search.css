@@ -1,0 +1,18 @@
+.searchWraper {
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+    margin-top: 10%;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+input {
+    margin-top: 10px;
+    margin-right: 8px;
+    height: 30px;
+}
+
+.submit {
+  padding: 5px;
+}
