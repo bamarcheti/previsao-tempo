@@ -4,7 +4,7 @@
 
 Projeto construído em sala de aula sendo pedido pelo professor para rodar um projeto que mostre de forma resumida e aleatória os nomes das capitais brasileira e temperatura. Além de também possuir uma página em que o usuário escolhe a cidade e traz todas as informações da api abaixo: `https://api.openweathermap.org/data/2.5/weather?q=${currentValue}&appid=4d8fb5b93d4af21d66a2948710284366&units=metric`.
 
-[🔗 Clique aqui para acessar](https://bamarcheti.github.io/sorteador-react/#/)
+[🔗 Clique aqui para acessar](https://github.com/Bamarcheti/previsaoTempo)
 
 
 ## __🛠 Tecnologias__
