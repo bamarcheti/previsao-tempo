@@ -5,7 +5,7 @@ const Search = () => {
   const keyID = '276028a84e6f633afbd7b4e1d68552bf';
 
   const [valorPesquisa, setValorPesquisa] = useState("");
-  const [Cidade, setCidade] = useState("");
+  const [cidade, setCidade] = useState("");
 
   const resultadoAtualizado = () => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${valorPesquisa}&appid=${keyID}&units=metric`)
@@ -16,10 +16,10 @@ const Search = () => {
           if (weather !== undefined) {
             setCidade(
               `<div>
-                <h1> ${main.temp} </h1>
-                <h4> ${name} </h4>
-                <h4> ${main.temp} </h4>
-                <h4> ${main.temp} </h4>
+                <h1>${main.temp}</h1>
+                <h4>${sys.country}</h4>
+                <h4>${name}</h4>
+                <h4>${weather[0]['description']}</h4>
               </div>`);
           }
         }
@@ -30,15 +30,15 @@ const Search = () => {
     <div className="searchWraper">
       <div className="search">
         <h2>Digite o nome da cidade:</h2>
-        <input placeholder={'Exemplo: Campo Grande...'} onChange={(evt) => { setValorPesquisa(evt.target.value) }} type="text" />
+        <input placeholder={'Digite aqui...'} onChange={(evt) => { setValorPesquisa(evt.target.value) }} type="text" />
         <button onClick={() => resultadoAtualizado()}>Pesquisar</button>
       </div>
 
       <br />
 
       {
-        (Cidade !== "") ?
-          <div dangerouslySetInnerHTML={{ __html: Cidade }} /> : <div>Pesquise por algo acima...</div>
+        (cidade !== "") ?
+          <div dangerouslySetInnerHTML={{ __html: cidade }} /> : <div>Pesquise por algo acima...</div>
       }
     </div>
   )
