@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Aleatorio = () => {
   const keyID = '276028a84e6f633afbd7b4e1d68552bf';
@@ -27,13 +27,13 @@ const Aleatorio = () => {
   }
   console.log('passou aqui');
 
-  useEffect(() => {
-    const response = setInterval(() => {
-      setValorPesquisa(setCidade());
-    }, 2000);
+  // useEffect(() => {
+  //   const response = setInterval(() => {
+  //     setValorPesquisa(setCidade());
+  //   }, 2000);
 
-    return response;
-  })
+  //   return response;
+  // })
 
 
   return (
