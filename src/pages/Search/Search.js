@@ -37,7 +37,7 @@ const Search = () => {
   return (
     <div className="searchWraper">
       <div className="search">
-        <h2>Digite o nome da cidade:</h2>
+        <h3>Digite o nome da cidade:</h3>
         <input placeholder={'Digite aqui...'} onChange={(evt) => { setValorPesquisa(evt.target.value) }} type="text" />
         <button onClick={() => resultadoAtualizado()}>Pesquisar</button>
       </div>
