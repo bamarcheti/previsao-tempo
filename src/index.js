@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import MainLayout from './components/MainLayout';
+import MainLayout from './components/MainLayout/MainLayout';
 import './index.css';
 import Aleatorio from './pages/Aleatorio/Aleatorio';
 import App from './pages/App';
