@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import './Random.css';
 import { Capitais } from "./utils/listCity";
 import Raffle from "./utils/Raffle";
 
-const Aleatorio = () => {
+const Random = () => {
   const keyID = '276028a84e6f633afbd7b4e1d68552bf';
 
   const [cidade, setCidade] = useState("");
@@ -15,10 +16,14 @@ const Aleatorio = () => {
         const { main, name, sys } = data;
         if (sys !== undefined) {
           setCidade(
-            `<div>
-              <h1>${main.temp}</h1>
-              <h4>${sys.country}</h4>
-              <h4>${name}</h4>
+            `<div className="resultado row">
+              <div>
+                <h1>${main.temp}</h1>
+              </div>
+              <div>
+                <h4>${sys.country}</h4>
+                <h4>${name}</h4>
+              </div>
             </div>`
           );
         }
@@ -35,16 +40,18 @@ const Aleatorio = () => {
   })
 
   return (
-    <div className="aleatorio">
-      <h3>Previsões de lugares aleatórios</h3>
-      <button onClick={() => setStateActive(true)}>Começar</button>
+    <div className="randomWraper">
+      <div className="random">
+        <h3>Previsões de lugares aleatórios</h3>
+        <button onClick={() => setStateActive(true)}>Começar</button>
+      </div>
       {
         (cidade !== "") ?
-          <div dangerouslySetInnerHTML={{ __html: cidade }} /> :  ""
+          <div dangerouslySetInnerHTML={{ __html: cidade }} /> : ""
       }
 
     </div>
   );
 }
 
-export default Aleatorio;
+export default Random;
