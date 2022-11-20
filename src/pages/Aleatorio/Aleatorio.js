@@ -1,46 +1,48 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Capitais } from "./utils/listCity";
+import Raffle from "./utils/Raffle";
 
 const Aleatorio = () => {
   const keyID = '276028a84e6f633afbd7b4e1d68552bf';
 
-  const [valorPesquisa, setValorPesquisa] = useState("");
   const [cidade, setCidade] = useState("");
+  const [stateActive, setStateActive] = useState(false);
 
   const resultadoAtualizado = () => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${valorPesquisa}&appid=${keyID}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${Capitais[Raffle(0, 26)][0]}&appid=${keyID}&units=metric`)
       .then(res => res.json())
       .then(data => {
-        const { main, name, sys, weather } = data;
+        const { main, name, sys } = data;
         if (sys !== undefined) {
-          if (weather !== undefined) {
-            setCidade(
-              `<div>
+          setCidade(
+            `<div>
               <h1>${main.temp}</h1>
               <h4>${sys.country}</h4>
               <h4>${name}</h4>
-              <h4>${weather[0]['description']}</h4>
-              </div>`);
-          }
+            </div>`
+          );
         }
       });
-    setValorPesquisa(setCidade());
   }
-  console.log('passou aqui');
 
-  // useEffect(() => {
-  //   const response = setInterval(() => {
-  //     setValorPesquisa(setCidade());
-  //   }, 2000);
-
-  //   return response;
-  // })
-
+  useEffect(() => {
+    const response = setInterval(() => {
+      if (stateActive) {
+        resultadoAtualizado();
+      }
+    }, 3000);
+    return () => clearInterval(response);
+  })
 
   return (
     <div className="aleatorio">
       <h3>Previsões de lugares aleatórios</h3>
-      <button onClick={() => resultadoAtualizado()}>Começar</button>
-      <h3>{resultadoAtualizado}</h3>
+      <button onClick={() => setStateActive(true)}>Começar</button>
+      {
+        (cidade !== "") ?
+          <div dangerouslySetInnerHTML={{ __html: cidade }} /> :  ""
+      }
+
     </div>
   );
 }
