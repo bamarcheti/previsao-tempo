@@ -16,11 +16,15 @@ const Search = () => {
           if (weather !== undefined) {
             setCidade(
               `<div>
-                <h1>${main.temp}</h1>
+                <h1>${Math.round(main.temp)}°</h1>
                 <h4>${sys.country}</h4>
                 <h4>${name}</h4>
                 <h4>${weather[0]['description']}</h4>
-              </div>`);
+                <h4>🌡️</h4>
+                <h4>Máx<span>↑</span>${Math.round(main.temp_max)}°</h4>
+                <h4>Mín<span>↓</span>${Math.round(main.temp_min)}°</h4>
+              </div>`
+            );
           }
         }
       });
