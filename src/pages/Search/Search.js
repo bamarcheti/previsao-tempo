@@ -4,21 +4,21 @@ import './Search.css';
 
 const Search = () => {
   const [valorPesquisa, setValorPesquisa] = useState("");
-  const [cidade, setCidade] = useState("");
+  const [pesquisar, setPesquisar] = useState('');
 
   return (
     <div className="searchWraper">
       <div className="search">
         <h3>Digite o nome da cidade:</h3>
         <input placeholder={'Digite aqui...'} onChange={(evt) => { setValorPesquisa(evt.target.value) }} type="text" />
-        <button onClick={() => Api(valorPesquisa)}>Pesquisar</button>
+        <button onClick={() => { setPesquisar(<Api valorPesquisa={valorPesquisa}/>) }}>Pesquisar</button>
       </div>
 
       <br />
 
       {
-        (cidade !== "") ?
-          <div dangerouslySetInnerHTML={{ __html: cidade }} /> : <div>Pesquise por algo acima...</div>
+        (pesquisar !== '') ?
+          pesquisar : <div>Pesquise por algo acima...</div>
       }
     </div>
   )
