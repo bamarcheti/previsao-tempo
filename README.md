@@ -4,7 +4,7 @@
 
 Projeto construído em sala de aula sendo pedido pelo professor para rodar um projeto que mostre de forma resumida e aleatória os nomes das capitais brasileira e temperatura. Além de também possuir uma página em que o usuário escolhe a cidade e traz todas as informações da api escolhida pelo professor.
 
-[🔗 Clique aqui para acessar](previsao-tempo-bamarcheti.vercel.app)
+[🔗 Clique aqui para acessar](https://previsao-tempo-bamarcheti.vercel.app/)
 
 
 ## __🛠 Tecnologias__
