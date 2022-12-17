@@ -15,10 +15,6 @@ const Api = (props) => {
           if (weather !== undefined) {
             setResult(res.data);
 
-            console.log('THALIA: Deu certo aqui na API');
-            console.log('THALIA: Olha só oq eu consegui ^^');
-            console.log('THALIA: ', main, name, sys, weather);
-
             oldSearch = props.valueSearch;
             gatilho = true;
           }
