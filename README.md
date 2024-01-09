@@ -1,4 +1,4 @@
-# __Previsão do Tempo__
+# **Previsão do Tempo**
 
 ![preview](./.github/preview.png)
 
@@ -6,15 +6,18 @@ Projeto construído em sala de aula sendo pedido pelo professor para rodar um pr
 
 [🔗 Clique aqui para acessar](https://previsao-tempo-bamarcheti.vercel.app/)
 
+## **🛠 Tecnologias**
 
-## __🛠 Tecnologias__
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
+## **✨ Como executar**
 
-## __💛 Contato__
+- **_[README-install](./README-install.md)_**
+
+## **💛 Contato**
 
 [<img src='https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About&logoColor=white' alt='Website' height='30'>](https://my-resume-bamarcheti.vercel.app/)
 [<img src='https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white' alt='Discord' height='30'>](https://discord.com/channels/@ba_marcheti#3824)
