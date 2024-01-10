@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import MainLayout from '../components/MainLayout/MainLayout';
+import MainLayout from '../components/MainLayout';
 import Random from '../pages/Random';
 import Search from '../pages/Search';
 
