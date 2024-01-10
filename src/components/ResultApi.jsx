@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 let oldSearch = '', gatilho = false;
 
-const Api = (props) => {
+const ResultApi = (props) => {
   const keyID = '276028a84e6f633afbd7b4e1d68552bf';
   const [result, setResult] = useState('');
   const { main, name, sys, weather } = result;
@@ -52,4 +52,4 @@ const Api = (props) => {
 
 }
 
-export default Api;
+export default ResultApi;
