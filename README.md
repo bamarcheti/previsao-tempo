@@ -4,7 +4,7 @@
 
 Projeto construído em sala de aula sendo pedido pelo professor para rodar um projeto que mostre de forma resumida e aleatória os nomes das capitais brasileira e temperatura. Além de também possuir uma página em que o usuário escolhe a cidade e traz todas as informações da api escolhida pelo professor.
 
-[🔗 Clique aqui para acessar](https://previsao-tempo-bamarcheti.vercel.app/)
+[🔗 Clique aqui para acessar](https://previsao-tempo.bamarcheti.dev.br)
 
 ## **🛠 Tecnologias**
 
@@ -19,7 +19,7 @@ Projeto construído em sala de aula sendo pedido pelo professor para rodar um pr
 
 ## **💛 Contato**
 
-[<img src='https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About&logoColor=white' alt='Website' height='30'>](https://my-resume-bamarcheti.vercel.app/)
+[<img src='https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About&logoColor=white' alt='Website' height='30'>](https://bamarcheti.dev.br)
 [<img src='https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white' alt='Discord' height='30'>](https://discord.com/channels/@ba_marcheti#3824)
 [<img src='https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white' alt='Instagram' height='30'>](https://www.instagram.com/ba_marcheti)
 [<img src='https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white' alt='Linkedin' height='30'>](https://www.linkedin.com/in/barbara-marcheti-fiorin/)
