@@ -2,6 +2,15 @@
 
 ![preview](./.github/preview.png)
 
+<p align="center">
+  <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contato">Contato</a>
+</p>
+
+
+## **💡 Sobre**
 Projeto construído em sala de aula sendo pedido pelo professor para rodar um projeto que mostre de forma resumida e aleatória os nomes das capitais brasileira e temperatura. Além de também possuir uma página em que o usuário escolhe a cidade e traz todas as informações da api escolhida pelo professor.
 
 [🔗 Clique aqui para acessar](https://previsao-tempo.bamarcheti.dev.br)
@@ -17,7 +26,7 @@ Projeto construído em sala de aula sendo pedido pelo professor para rodar um pr
 
 - **_[README-install](./README-install.md)_**
 
-## **💛 Contato**
+## **💜 Contato**
 
 [<img src='https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About&logoColor=white' alt='Website' height='30'>](https://bamarcheti.dev.br)
 [<img src='https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white' alt='Discord' height='30'>](https://discord.com/channels/@ba_marcheti#3824)
